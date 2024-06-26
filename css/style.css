@@ -4,10 +4,11 @@
 }
 header nav ul li a {
 	text-decoration: none;
+	color: black;
     }
     
 header{
-	margin-bottom: 100px;
+	
 	top: 0;
 	background-color: #F6F2E6;
 	position: fixed;
@@ -17,7 +18,7 @@ header{
 }
 #logo {
 	margin-left: 50px;
-	height: 100px;
+	height: 130px;
 }
 #logo-header{
 	float: left;
@@ -33,61 +34,276 @@ header nav ul li {
 nav ul{
 	list-style: none;
 }
+#church-name-header span{
+	font-weight: 700;
+	font-size: 40px;
+	margin-top: 50px;
+	float: left;
+}
+#logo-church-name{
+
+}
+#hero{
+	background-image: 
+	linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 110.04%),
+	url('../assets/inside-marriage.jpg');
+	overflow: hidden;
+	background-repeat:no-repeat;
+	background-size: contain;
+	height: 59.8rem;
+}
 main{
 	margin-top: 100px;
 }
-#hero{
-	background-image: url('../assets/fachada.jpg');
-	height: 900px;
-}
-#home{
-	background-color: green;
-	margin-bottom: 50px;
+#ourchurch {
+	background-color: #87CEEB;
+	margin-bottom: 10px; /* Diminuir a margem inferior */
 	width: 50%;
-	padding: 10% 60px 50px;
-	margin-right: 50%;
-	margin-left: 50%;
-	border-radius:30px;
+	padding: 5% 60px 20px; /* Diminuir o preenchimento para reduzir o espaço */
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 30px;
 	color: white;
 	font-weight: 700;
 	font-size: 40px;
-	transform: translate(-50%, -50%);
 	text-align: unset;
-}
-#home h1{
+	line-height: 1.5;
+    }
+    
+#ourchurch h1{
 	margin-bottom: 50px;
 }
-#about{
-	background-color: blue;
+#programs {
+	margin: 10px 0; /* Diminuir as margens superiores e inferiores */
+	text-align: center;
+	width: 100%;
+    }
+    .church-programs {
+	display: inline-block;
+	position: relative; /* Para o posicionamento do texto */
+	width: 250px;
+	height: 300px; /* Aumentar a altura para melhor visualização */
+	background-color: #000;
+	color: white;
+	margin: 10px; /* Espaçamento entre os itens */
+	border-radius: 10px;
+	text-align: center;
+	vertical-align: top;
+	background-size: cover; /* Ajusta a imagem de fundo para cobrir o elemento */
+	background-position: center; /* Centraliza a imagem de fundo */
+    }
+.church-programs span {
+	position: absolute;
+	bottom: 10px; /* Posiciona o texto 10px acima da borda inferior */
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-size: 36px;
+	font-weight: 700;
+
+    }
+#times{
+	background-image: 
+	linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 110.04%),
+	url('../assets/altar.jpg');
+	overflow: hidden;
+	background-repeat:no-repeat;
+	background-size: 250px 300px;
+	margin: 30px;
+	cursor: pointer;
+}
+#events{
+	background-image: 
+	linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 110.04%),
+	url('../assets/events.jpg');
+	overflow: hidden;
+	background-repeat:no-repeat;
+	background-size: 350px 300px;
+	margin: 30px;
+	cursor: pointer;
+}
+#pastoral{
+	background-image: 
+	linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 110.04%),
+	url('../assets/pastoral.jpg');
+	overflow: hidden;
+	background-repeat:no-repeat;
+	background-size: 300px 300px;
+	margin: 30px;
+	cursor: pointer;
+}
+#about {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px 0; /* Diminuir as margens superiores e inferiores */
+	width: 100%;
+	
+    }
+#about-description{
+	
 	margin-bottom: 50px;
 	width: 50%;
 	padding: 10% 60px 50px;
-	margin-right: 50%;
-	margin-left: 50%;
-	border-radius:30px;
-	color: white;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 30px;
+	color: grey;
 	font-weight: 700;
 	font-size: 40px;
-	transform: translate(-50%, -50%);
 	text-align: unset;
+}
+#about-description h1{
+	color: #D2B48C;
+}
+#about-map{
+	width: 40%;
+	margin-left: 20px;
+}
+    #patron {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px 0; /* Diminuir as margens superiores e inferiores */
+	width: 100%;
 }
 
-#patron{
-	background-color: red;
-	margin-bottom: 50px;
-	width: 50%;
+#patron-description {
+
+	width: 40%;
 	padding: 10% 60px 50px;
-	margin-right: 50%;
-	margin-left: 50%;
-	border-radius:30px;
-	color: white;
+	border-radius: 30px;
+	color: gray;
 	font-weight: 700;
 	font-size: 40px;
-	transform: translate(-50%, -50%);
+	line-height: 1.5;
 	text-align: unset;
 }
-footer{
-	background-color: #151F6C;
-	color: white;
+#patron-description h1{
+	color: goldenrod;
+}
+#image-patron {
+	width: 40%;
+	margin-left: 20px;
+}
 
+#image-patron img {
+	width: 35em;
+	border-radius: 30px; /* Adiciona borda arredondada para combinar com a div dourada */
+	margin: 5em;
+}
+
+/* FOOTER */
+footer {
+	background-color: #F6F2E6;
+	color: black;
+	width: 100%;
+	padding: 1.5rem 0;
+    }
+    
+    #footer-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 0 10%;
+    }
+    
+    #footer-navigation, #footer-contacts, #footer-address {
+	padding: 0 1rem;
+    }
+    
+    #footer-navigation ul, #footer-contacts ul {
+	list-style: none;
+	padding: 0;
+    }
+    
+    #footer-navigation ul li a, #footer-contacts ul li a {
+	text-decoration: none;
+	color: black;
+    }
+    
+    #footer-address p {
+	margin: 0;
+    }
+    
+    
+
+/* HOURS PAGE*/
+
+#main-hours-page {
+	margin-top: 200px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+#begining h1 {
+	text-align: center;	
+	font-size: 50px;
+}
+
+#begining img {
+	width: 70em;
+	display: block;
+	margin: auto;
+}
+#hours {
+	text-align: center;
+}
+
+.hours-mass-confissions {
+	width: 100%;
+	text-align: center;
+}
+
+#hours-mass, #hours-confissions {
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+.hours-title {
+	text-align: center;
+	font-size: 40px;
+}
+
+#hours-mass div, #hours-confissions div {
+	display: inline-block;
+	width: 45%;
+	vertical-align: top;
+	margin: 10px;
+	text-align: center;
+}
+
+#hours-mass div h3, #hours-confissions div h3, 
+#hours-mass div p, #hours-confissions div p {
+	margin: 0;
+}
+.divider{
+	
+	height: 50px;
+	background-color: goldenrod;
+	width: 70em;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+#send-button{
+	border-radius: 10px;
+	background-color: goldenrod;
+	color: white;
+	padding: 10px;
+}
+#send-button:hover{
+	background-color: rgb(159, 129, 52);
+}
+#communion-prayer p{
+	margin: 50px;
+}
+#communion-prayer{
+	margin: 50px;
+}
+#communion-prayer img{
+	border-radius: 10px;
+	box-shadow: 0 20px 25px #293d4729;
 }

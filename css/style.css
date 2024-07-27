@@ -1,148 +1,168 @@
-*{
-	font-family: 'Lora', serif;
-	margin: 0;
+* {
+    font-family: 'Lora', serif;
+    margin: 0;
 }
-header nav ul li a {
-	text-decoration: none;
-	color: black;
-    }
-    
-header{
-	
-	top: 0;
-	background-color: #F6F2E6;
-	position: fixed;
-	width: 100%;
-	z-index: 1;
-	
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    background-color: #F6F2E6;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    padding: 0;
 }
+
+#logo-church-name {
+    display: flex;
+    align-items: center;
+}
+
 #logo {
-	margin-left: 50px;
-	height: 130px;
+    height: 130px;
 }
-#logo-header{
-	float: left;
+
+#church-name-header {
+    margin-left: 20px;
 }
-header nav{
-	float: right;
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
 }
+
 header nav ul li {
-	float: left;
-	
-	margin: 50px;
-    }
-nav ul{
-	list-style: none;
+    margin: 0 20px;
 }
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
 #church-name-header span{
 	font-weight: 700;
 	font-size: 40px;
 	margin-top: 50px;
 	float: left;
 }
-#logo-church-name{
-
-}
 #hero{
 	background-image: 
-	linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 110.04%),
+	linear-gradient(180deg, rgba(0, 0, 0, 0.0) 0%, #282828 110.04%),
 	url('../assets/inside-marriage.jpg');
 	overflow: hidden;
 	background-repeat:no-repeat;
 	background-size: contain;
 	height: 59.8rem;
 }
-main{
+main {
 	margin-top: 100px;
-}
-#ourchurch {
+    }
+    
+    .church-name span {
+	margin-bottom: 50px;
+    }
+    
+    #ourchurch {
 	background-color: #87CEEB;
-	margin-bottom: 10px; /* Diminuir a margem inferior */
+	margin-bottom: 10px;
 	width: 50%;
-	padding: 5% 60px 20px; /* Diminuir o preenchimento para reduzir o espaço */
+	padding: 5% 60px 20px;
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 30px;
 	color: white;
 	font-weight: 700;
 	font-size: 40px;
-	text-align: unset;
 	line-height: 1.5;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
     }
     
-#ourchurch h1{
+    #ourchurch h1 {
 	margin-bottom: 50px;
-}
-#programs {
-	margin: 10px 0; /* Diminuir as margens superiores e inferiores */
+    }
+    
+    #programs {
+	margin: 50px 0;
 	text-align: center;
 	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
     }
+    
     .church-programs {
 	display: inline-block;
-	position: relative; /* Para o posicionamento do texto */
+	position: relative;
 	width: 250px;
-	height: 300px; /* Aumentar a altura para melhor visualização */
+	height: 300px;
 	background-color: #000;
 	color: white;
-	margin: 10px; /* Espaçamento entre os itens */
+	margin: 10px;
 	border-radius: 10px;
 	text-align: center;
 	vertical-align: top;
-	background-size: cover; /* Ajusta a imagem de fundo para cobrir o elemento */
-	background-position: center; /* Centraliza a imagem de fundo */
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	padding: 20px;
     }
-.church-programs span {
+    
+    .church-programs span {
 	position: absolute;
-	bottom: 10px; /* Posiciona o texto 10px acima da borda inferior */
+	bottom: 10px;
 	left: 50%;
 	transform: translateX(-50%);
 	padding: 5px 10px;
 	border-radius: 5px;
 	font-size: 36px;
 	font-weight: 700;
-
     }
-#times{
-	background-image: 
-	linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 110.04%),
-	url('../assets/altar.jpg');
+    
+    #times {
+	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 110.04%), url('../assets/altar.jpg');
 	overflow: hidden;
-	background-repeat:no-repeat;
-	background-size: 250px 300px;
+	background-repeat: no-repeat;
+	background-size: 300px 340px;
 	margin: 30px;
 	cursor: pointer;
-}
-#events{
-	background-image: 
-	linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 110.04%),
-	url('../assets/events.jpg');
+    }
+    
+    #events {
+	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 110.04%), url('../assets/events.jpg');
 	overflow: hidden;
-	background-repeat:no-repeat;
-	background-size: 350px 300px;
+	background-repeat: no-repeat;
+	background-size: 420px 335px;
 	margin: 30px;
 	cursor: pointer;
-}
-#pastoral{
-	background-image: 
-	linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 110.04%),
-	url('../assets/pastoral.jpg');
+    }
+    
+    #pastoral {
+	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 110.04%), url('../assets/pastoral.jpg');
 	overflow: hidden;
-	background-repeat:no-repeat;
-	background-size: 300px 300px;
+	background-repeat: no-repeat;
+	background-size: 300px 340px;
 	margin: 30px;
 	cursor: pointer;
-}
-#about {
+    }
+    
+    #about {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 10px 0; /* Diminuir as margens superiores e inferiores */
+	margin: 10px 10px;
 	width: 100%;
-	
+	flex-wrap: wrap;
     }
-#about-description{
-	
+    
+    #about-description {
 	margin-bottom: 50px;
 	width: 50%;
 	padding: 10% 60px 50px;
@@ -151,26 +171,29 @@ main{
 	border-radius: 30px;
 	color: grey;
 	font-weight: 700;
-	font-size: 40px;
+	font-size: 30px;
 	text-align: unset;
-}
-#about-description h1{
+    }
+    
+    #about-description h1 {
 	color: #D2B48C;
-}
-#about-map{
+    }
+    
+    #about-map {
 	width: 40%;
 	margin-left: 20px;
-}
+    }
+    
     #patron {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 10px 0; /* Diminuir as margens superiores e inferiores */
+	margin: 10px 0;
 	width: 100%;
-}
-
-#patron-description {
-
+	flex-wrap: wrap;
+    }
+    
+    #patron-description {
 	width: 40%;
 	padding: 10% 60px 50px;
 	border-radius: 30px;
@@ -179,21 +202,25 @@ main{
 	font-size: 40px;
 	line-height: 1.5;
 	text-align: unset;
-}
-#patron-description h1{
+    }
+    
+    #patron-description h1 {
 	color: goldenrod;
-}
-#image-patron {
+    }
+    
+    #image-patron {
 	width: 40%;
 	margin-left: 20px;
-}
-
-#image-patron img {
-	width: 35em;
-	border-radius: 30px; /* Adiciona borda arredondada para combinar com a div dourada */
-	margin: 5em;
-}
-
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    }
+    
+    #image-patron img {
+	width: 100%;
+	border-radius: 30px;
+    }
+    
 /* FOOTER */
 footer {
 	background-color: #F6F2E6;
@@ -204,21 +231,34 @@ footer {
     
     #footer-container {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: flex-start;
-	padding: 0 10%;
+	text-align: center;
+	padding: 0 2rem;
+	gap: 2rem;
     }
     
-    #footer-navigation, #footer-contacts, #footer-address {
-	padding: 0 1rem;
+    #footer-navigation,
+    #footer-contacts,
+    #footer-address {
+	flex: 1;
     }
     
-    #footer-navigation ul, #footer-contacts ul {
+    #footer-navigation ul,
+    #footer-contacts ul {
 	list-style: none;
 	padding: 0;
+	margin: 0;
     }
-    
-    #footer-navigation ul li a, #footer-contacts ul li a {
+    #footer-contacts ul{
+	display: flex;
+	justify-content: center;
+    }
+    #footer-contacts ul li{
+	margin: 10px;
+    }
+    #footer-navigation ul li a,
+    #footer-contacts ul li a {
 	text-decoration: none;
 	color: black;
     }
@@ -228,82 +268,4 @@ footer {
     }
     
     
-
-/* HOURS PAGE*/
-
-#main-hours-page {
-	margin-top: 200px;
-	margin-right: auto;
-	margin-left: auto;
-	text-align: center;
-}
-
-#begining h1 {
-	text-align: center;	
-	font-size: 50px;
-}
-
-#begining img {
-	width: 70em;
-	display: block;
-	margin: auto;
-}
-#hours {
-	text-align: center;
-}
-
-.hours-mass-confissions {
-	width: 100%;
-	text-align: center;
-}
-
-#hours-mass, #hours-confissions {
-	width: 100%;
-	margin-bottom: 50px;
-}
-
-.hours-title {
-	text-align: center;
-	font-size: 40px;
-}
-
-#hours-mass div, #hours-confissions div {
-	display: inline-block;
-	width: 45%;
-	vertical-align: top;
-	margin: 10px;
-	text-align: center;
-}
-
-#hours-mass div h3, #hours-confissions div h3, 
-#hours-mass div p, #hours-confissions div p {
-	margin: 0;
-}
-.divider{
-	
-	height: 50px;
-	background-color: goldenrod;
-	width: 70em;
-	margin: auto;
-	margin-top: 50px;
-	margin-bottom: 20px;
-}
-#send-button{
-	border-radius: 10px;
-	background-color: goldenrod;
-	color: white;
-	padding: 10px;
-}
-#send-button:hover{
-	background-color: rgb(159, 129, 52);
-}
-#communion-prayer p{
-	margin: 50px;
-}
-#communion-prayer{
-	margin: 50px;
-}
-#communion-prayer img{
-	border-radius: 10px;
-	box-shadow: 0 20px 25px #293d4729;
-}
+    

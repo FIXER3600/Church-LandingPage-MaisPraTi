@@ -1,0 +1,185 @@
+* {
+	font-family: 'Lora', serif;
+	margin: 0;
+    }
+    
+    header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	top: 0;
+	background-color: #F6F2E6;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+	padding: 0;
+    }
+    
+    #logo-church-name {
+	display: flex;
+	align-items: center;
+    }
+    
+    #logo {
+	height: 130px;
+    }
+    
+    #church-name-header {
+	margin-left: 20px;
+    }
+    
+    header nav ul {
+	display: flex;
+	list-style: none;
+	padding: 0;
+    }
+    
+    header nav ul li {
+	margin: 0 20px;
+    }
+    
+    header nav ul li a {
+	text-decoration: none;
+	color: black;
+    }
+    
+    #church-name-header span{
+	    font-weight: 700;
+	    font-size: 40px;
+	    margin-top: 50px;
+	    float: left;
+    }
+    #hero{
+	    background-image: 
+	    linear-gradient(180deg, rgba(0, 0, 0, 0.0) 0%, #282828 110.04%),
+	    url('../assets/inside-marriage.jpg');
+	    overflow: hidden;
+	    background-repeat:no-repeat;
+	    background-size: contain;
+	    height: 59.8rem;
+    }
+    main{
+	    margin-top: 100px;
+    }
+    .church-name span{
+	    margin-bottom: 50px;
+    }
+/* PASTORAL PAGE*/
+
+#main-pastoral-page {
+	margin-top: 200px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+    }
+    
+    #begining-pastoral h1 {
+	text-align: center;
+	font-size: 50px;
+    }
+    
+    #third-of-men, #charity, #tithe {
+	display: flex;
+	justify-content: center; /* Ajuste para centralizar */
+	align-items: center;
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	margin-top: 20px;
+    }
+    
+    .third-of-men-description, .charity-description, .tithe-description {
+	width: 50%;
+	padding: 20px;
+	box-sizing: border-box;
+    }
+    
+    .third-of-men-description h1, .charity-description h1, .tithe-description h1 {
+	font-size: 1.5rem;
+	color: #333;
+	margin-top: 0;
+	margin-bottom: 10px;
+    }
+    
+    .third-of-men-description p, .charity-description p, .tithe-description p {
+	font-size: 1rem;
+	line-height: 1.4;
+	margin-top: 0;
+    }
+    
+    #third-of-men-image, #charity-image, #tithe-image {
+	width: 50%;
+	padding: 20px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center; /* Centralizar imagem horizontalmente */
+    }
+    
+    #third-of-men-image img, #charity-image img, #tithe-image img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+    }
+    
+    .divider {
+	height: 50px;
+	background-color: goldenrod;
+	width: 70em;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 20px;
+    }
+    
+    
+    /* FOOTER */
+    footer {
+	background-color: #F6F2E6;
+	color: black;
+	width: 100%;
+	padding: 1.5rem 0;
+    }
+    
+    #footer-container {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	text-align: center;
+	padding: 0 2rem;
+	gap: 2rem;
+    }
+    
+    #footer-navigation,
+    #footer-contacts,
+    #footer-address {
+	flex: 1;
+    }
+    
+    #footer-navigation ul,
+    #footer-contacts ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+    }
+    
+    #footer-navigation ul li a,
+    #footer-contacts ul li a {
+	text-decoration: none;
+	color: black;
+    }
+    
+    #footer-address p {
+	margin: 0;
+    }
+    
+    
+    
+/* Divider */
+    
+.divider {
+	height: 50px;
+	background-color: goldenrod;
+	width: 80em;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 20px;
+    }

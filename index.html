@@ -9,6 +9,31 @@
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 <title>Paróquia Sagrada Família</title>
+<script type='importmap'>
+	{
+	  "imports": {
+	    "@fullcalendar/core": "https://cdn.skypack.dev/@fullcalendar/core@6.1.15",
+	    "@fullcalendar/daygrid": "https://cdn.skypack.dev/@fullcalendar/daygrid@6.1.15"
+	  }
+	}
+      </script>
+      <script type='module'>
+	import { Calendar } from '@fullcalendar/core'
+	import dayGridPlugin from '@fullcalendar/daygrid'
+  
+	document.addEventListener('DOMContentLoaded', function() {
+	  const calendarEl = document.getElementById('calendar')
+	  const calendar = new Calendar(calendarEl, {
+	    plugins: [dayGridPlugin],
+	    headerToolbar: {
+	      left: 'prev,next today',
+	      center: 'title',
+	      right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+	    }
+	  })
+	  calendar.render()
+	})
+      </script>
 </head>
 <body>
 	<header>
@@ -46,13 +71,16 @@
 					<span>Horários</span>
 				</div>
 			</a>
-			
+			<a href="./events/index.html">
 			<div id="events" class="church-programs">
 				<span>Eventos</span>
 			</div>
+		</a>
+			<a href="./pastoral/index.html">
 			<div id="pastoral" class="church-programs">
 				<span>Pastorais</span>
 			</div>
+		</a>
 		</section>
 		<section id="about">
 			<div id="about-description">
@@ -73,6 +101,8 @@
 				<img src="./assets/sagrada-familia-vitral.jpg" alt="">
 			</div>
 		</section>
+		
+		<div id='calendar'></div>		
 	</main>
 	<footer id="contact">
 		<div id="footer-container">
@@ -90,10 +120,11 @@
 			<p>R. Lourenço Franco do Prado,<br/> 04 - Jardim Nélia São Paulo - SP,<br/> 08142-230</p>
 		    </nav>
 		    <nav id="footer-contacts">
-			<h2>Contatos</h2>
+			<h2>Redes Sociais</h2>
 			<ul>
-			    <li><a href="#home">Facebook</a></li>
-			    <li><a href="#about">Instagram</a></li>
+			    <li><a href="https://www.facebook.com/paroquiasagradafamiliamabel/?locale=pt_BR">
+				<img src="./assets/icons/facebook.png" alt="">
+				</a></li>
 			</ul>
 		    </nav>
 		</div>

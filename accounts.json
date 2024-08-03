@@ -1,0 +1,60 @@
+{
+  "accounts": [
+    {
+      "id": "1",
+      "username": "user1@example.com",
+      "password": "password123",
+      "admin": false
+    },
+    {
+      "id": "2",
+      "username": "user2@example.com",
+      "password": "password1234",
+      "admin": false
+    },
+    {
+      "id": "3",
+      "username": "user3@example.com",
+      "password": "password1235",
+      "admin": false
+    },
+    {
+      "id": "4",
+      "username": "user4@example.com",
+      "password": "password1236",
+      "admin": false
+    },
+    {
+      "id": "5",
+      "username": "user5@example.com",
+      "password": "password1237",
+      "admin": false
+    },
+    {
+      "id": "6",
+      "username": "user6@example.com",
+      "password": "password1238",
+      "admin": false
+    },
+    {
+      "id": "7",
+      "username": "admin@email.com",
+      "password": "admin123",
+      "admin": true
+    },
+    {
+      "id": "8",
+      "userName": "João Batista",
+      "email": "joaobatista@gmail.com",
+      "password": "joao123",
+      "confirmPassword": "joao123"
+    },
+    {
+      "id": "96bf",
+      "userName": "Éder Fernandes",
+      "email": "ederfernandes@example.com",
+      "password": "U2FsdGVkX19dNHxVvkED6H1drbBlY46ES08J99/9uOw=",
+      "confirmPassword": "U2FsdGVkX19dNHxVvkED6H1drbBlY46ES08J99/9uOw="
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+* {
+	font-family: 'Lora', serif;
+	margin: 0;
+    }
+    
+    header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	top: 0;
+	background-color: #F6F2E6;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+	padding: 0;
+    }
+    
+    #logo-church-name {
+	display: flex;
+	align-items: center;
+    }
+    
+    #logo {
+	height: 130px;
+    }
+    
+    #church-name-header {
+	margin-left: 20px;
+    }
+    
+    header nav ul {
+	display: flex;
+	list-style: none;
+	padding: 0;
+    }
+    
+    header nav ul li {
+	margin: 0 20px;
+    }
+    
+    header nav ul li a {
+	text-decoration: none;
+	color: black;
+    }
+    
+    #church-name-header span{
+	    font-weight: 700;
+	    font-size: 40px;
+	    margin-top: 50px;
+	    float: left;
+    }
+    #logout{
+	border-radius: 10px;
+	background-color: goldenrod;
+	color: white;
+	padding: 10px;
+	cursor: pointer;
+	text-align: center;
+	align-self: center;
+	border: none;
+    }

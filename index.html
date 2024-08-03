@@ -1,135 +1,34 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./css/style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-<title>Paróquia Sagrada Família</title>
-<script type='importmap'>
-	{
-	  "imports": {
-	    "@fullcalendar/core": "https://cdn.skypack.dev/@fullcalendar/core@6.1.15",
-	    "@fullcalendar/daygrid": "https://cdn.skypack.dev/@fullcalendar/daygrid@6.1.15"
-	  }
-	}
-      </script>
-      <script type='module'>
-	import { Calendar } from '@fullcalendar/core'
-	import dayGridPlugin from '@fullcalendar/daygrid'
-  
-	document.addEventListener('DOMContentLoaded', function() {
-	  const calendarEl = document.getElementById('calendar')
-	  const calendar = new Calendar(calendarEl, {
-	    plugins: [dayGridPlugin],
-	    headerToolbar: {
-	      left: 'prev,next today',
-	      center: 'title',
-	      right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
-	    }
-	  })
-	  calendar.render()
-	})
-      </script>
+	<title>Login - Paróquia Sagrada Família</title>
+	<link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
-	<header>
-		<div id="logo-church-name">
-		<div class="logo" id="logo-header">
-			<a href="./index.html">
-			<img id="logo" src="assets/logo.png" alt="Logo da Igreja">
-		</a>
-		    </div>
-		    <div class="church-name" id="church-name-header">
-			<span>Paróquia Sagrada Família</span>
-		    </div>
-		</div>
-		<nav>
-			<ul>
-				<li><a href="#hero">Início</a></li>
-				<li><a href="#ourchurch">Nossa Paróquia</a></li>
-				<li><a href="#about">Onde Estamos?</a></li>
-				<li><a href="#patron">Sagrada Família</a></li>
-				<li><a href="#contact">Contato</a></li>
-			</ul>
-		</nav>
-	</header>
-	<section id="hero">
-		
-	</section>
-	<main >
-		<section id="ourchurch">
-			<h1>Nossa Paróquia</h1>
-			<p>A Paróquia da Sagrada Família é um lugar de fé, esperança e amor. Nossa comunidade é dedicada a viver os ensinamentos de Jesus Cristo, inspirada pelo exemplo da Sagrada Família de Nazaré. Aqui, cada família é valorizada e cada pessoa é bem-vinda.</p>
-		</section>
-		<section id="programs">
-			<a href="./hours/index.html">
-				<div id="times" class="church-programs">
-					<span>Horários</span>
-				</div>
-			</a>
-			<a href="./events/index.html">
-			<div id="events" class="church-programs">
-				<span>Eventos</span>
-			</div>
-		</a>
-			<a href="./pastoral/index.html">
-			<div id="pastoral" class="church-programs">
-				<span>Pastorais</span>
-			</div>
-		</a>
-		</section>
-		<section id="about">
-			<div id="about-description">
-			<h1>Onde Estamos?</h1>
-			<p>A  Paróquia da Sagrada Família do Jardim Nélia, está situada na Região Administrativa da  Subprefeitura Itaim Paulista. Itaim Paulista é um distrito situado no extremo leste do município brasileiro de São Paulo, no estado de São Paulo. É no Itaim Paulista que se encontra a parte sul da Estação Itaim Paulista e a Estação Jardim Romano (sendo a parte norte dessas estações pertencentes ao Distrito de Jardim Helena) da linha 12 da CPTM.</p>
-		</div>
-			<div id="about-map">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.6580483653343!2d-46.38297242467155!3d-23.50882317883585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce64bd153fb127%3A0x53dba6bb14583357!2sPar%C3%B3quia%20da%20Sagrada%20Fam%C3%ADlia!5e0!3m2!1spt-BR!2sbr!4v1719281384412!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-			</div>
-		</section>
-		<section id="patron">
-			<div id="patron-description">
+	<main id="login-main">
+		<section id="form-login">
 			
-			<h1>Sagrada Família</h1>
-			<p>A Sagrada Família é uma fonte de inspiração e modelo para todas as famílias cristãs. Ela nos ensina a importância do amor, da fé e da união familiar. Através de sua vida cotidiana simples, a Sagrada Família nos mostra como viver de acordo com os valores cristãos, enfrentando os desafios com confiança em Deus.</p>
-		</div>
-			<div id="image-patron">
-				<img src="./assets/sagrada-familia-vitral.jpg" alt="">
-			</div>
+				<div id="login-box">
+					<form id="loginForm">
+						<h1>Login</h1>
+						<input type="email" id="email" placeholder="Email"/>
+						<input type="password" id="password" placeholder="Senha"/>
+						<p>Ainda não tem uma conta?</p><a href="./signup/index.html">Cadastre-se</a>
+						<button  type="submit">Entrar</button>
+					</form>
+					<p id="message"></p>
+				</div>
+			
 		</section>
-		
-		<div id='calendar'></div>		
+		<section id="image-login">
+			<img src="../assets/Sagrada-Familia-login.jpg" alt="" srcset="">
+		</section>
 	</main>
-	<footer id="contact">
-		<div id="footer-container">
-		    <nav id="footer-navigation">
-			<h2>Navegue pelo site</h2>
-			<ul>
-			    <li><a href="#home">Início</a></li>
-			    <li><a href="#about">Sobre</a></li>
-			    <li><a href="#doctrine">Sagrada Família</a></li>
-			    <li><a href="#contact">Contato</a></li>
-			</ul>
-		    </nav>
-		    <nav id="footer-address">
-			<h2>Endereço</h2>
-			<p>R. Lourenço Franco do Prado,<br/> 04 - Jardim Nélia São Paulo - SP,<br/> 08142-230</p>
-		    </nav>
-		    <nav id="footer-contacts">
-			<h2>Redes Sociais</h2>
-			<ul>
-			    <li><a href="https://www.facebook.com/paroquiasagradafamiliamabel/?locale=pt_BR">
-				<img src="./assets/icons/facebook.png" alt="">
-				</a></li>
-			</ul>
-		    </nav>
-		</div>
-	    </footer>
-	    
-		    
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="./login.js"></script>
 </body>
 </html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cadastre-se - Paróquia Sagrada Família</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+	<main id="signup-main">
+		
+		<section id="image-signup">
+			<img src="../assets/sagrada-familia-signup.jpg" alt="" srcset="">
+		</section>
+		
+		<section id="form-signup">
+			<div id="logo-church-name">
+				<div class="logo" id="logo-header">
+					<a href="./index.html">
+					<img id="logo" src="../assets/logo.png" alt="Logo da Igreja">
+				</a>
+				    </div>
+				    <div class="church-name" id="church-name-header">
+					<span>Paróquia Sagrada Família</span>
+				    </div>
+				</div>
+			<div id="signup-box">
+				<form id="signupForm">
+					<h1>Cadastro</h1>
+					<input type="text" id="nome" placeholder="Nome"/>
+					<p id="errorUserName"></p>
+					<input type="email" id="email" placeholder="Email"/>
+					<p id="errorEmail"></p>
+					<input type="password" id="senha" placeholder="Senha"/>
+					<p id="errorPassword"></p>
+					<input type="confirmPassword" id="confirmPassword" placeholder="Confirme a Senha"/>
+					<p id="errorConfirmPassword"></p>
+					<p>Já tem uma conta? <a href="../index.html">Entrar</a></p>
+					<button type="submit">Cadastrar</button>
+				</form>
+			</div>
+		</section>
+	
+	</main>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+	<script src="./signup.js"></script>
+</body>
+</html>

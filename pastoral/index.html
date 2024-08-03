@@ -4,34 +4,37 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="../header/style.css">
+	<link rel="stylesheet" href="../footer/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 	<title>Pastorais</title>
 </head>
+<script>
+	function logout() {
+	localStorage.clear();
+	window.location.href = '../index.html';
+	}
+        fetch('../header/index.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            })
+            .catch(error => console.error('Erro ao carregar o HTML:', error));
+
+	    fetch('../footer/index.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            })
+            .catch(error => console.error('Erro ao carregar o HTML:', error));
+
+
+</script>
 <body>
-	<header>
-		<div id="logo-church-name">
-		<div class="logo" id="logo-header">
-			<a href="../index.html">
-			<img id="logo" src="../assets/logo.png" alt="Logo da Igreja">
-		</a>
-		    </div>
-		    <div class="church-name" id="church-name-header">
-			<span>Paróquia Sagrada Família</span>
-		    </div>
-		</div>
-		<nav>
-			<ul>
-				<li><a href="#hero">Início</a></li>
-				<li><a href="#ourchurch">Nossa Paróquia</a></li>
-				<li><a href="#about">Sobre</a></li>
-				<li><a href="#patron">Sagrada Família</a></li>
-				<li><a href="#contact">Contato</a></li>
-			</ul>
-		</nav>
-	</header>
+	<div id="header"></div>
 	<main id="main-pastoral-page">
 		<section id="begining-pastoral">
 			<h1>Pastorais</h1>
@@ -69,29 +72,6 @@
 			</div>
 		</section>
 	</main>
-	<footer id="contact">
-		<div id="footer-container">
-		    <nav id="footer-navigation">
-			<h2>Navegue pelo site</h2>
-			<ul>
-			    <li><a href="#home">Início</a></li>
-			    <li><a href="#about">Sobre</a></li>
-			    <li><a href="#doctrine">Sagrada Família</a></li>
-			    <li><a href="#contact">Contato</a></li>
-			</ul>
-		    </nav>
-		    <nav id="footer-address">
-			<h2>Endereço</h2>
-			<p>R. Lourenço Franco do Prado,<br/> 04 - Jardim Nélia São Paulo - SP,<br/> 08142-230</p>
-		    </nav>
-		    <nav id="footer-contacts">
-			<h2>Contatos</h2>
-			<ul>
-			    <li><a href="#home">Facebook</a></li>
-			    <li><a href="#about">Instagram</a></li>
-			</ul>
-		    </nav>
-		</div>
-	    </footer>
+	<div id="footer"></div>	
 </body>
 </html>

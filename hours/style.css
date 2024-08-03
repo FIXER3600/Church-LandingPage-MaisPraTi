@@ -147,6 +147,7 @@
 	cursor: pointer;
 	text-align: center;
 	align-self: center;
+	border: none;
     }
     
     #send-button:hover {

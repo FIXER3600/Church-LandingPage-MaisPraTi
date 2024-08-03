@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="../header/style.css">
+	<link rel="stylesheet" href="../footer/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	<title>Eventos</title>
+	    
+</head>
+<script>
+	function logout() {
+	localStorage.clear();
+	window.location.href = '../index.html';
+	}
+        fetch('../header/index.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            })
+            .catch(error => console.error('Erro ao carregar o HTML:', error));
+
+	    fetch('../footer/index.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            })
+            .catch(error => console.error('Erro ao carregar o HTML:', error));
+
+
+    </script>
+</script>
+<body>
+	<div id="header"></div>
+	<main id="main-events-page">
+		<div id="begining-events">
+			<h1>Eventos</h1>
+			<img src="../assets/event.jpg" alt="">
+		</div>
+		<div id="event-list">
+			<div class="event">
+				<dl>
+					<span>Jul 21, 18:00</span>
+				</dl>
+				<div>
+					<ul>
+						<li>
+							<h2 class="title-event">Missa</h2>
+							<p>Jul 21 | 18:00 18:00 - 19:30</p>
+						</li>
+						<li>
+							<h2 class="title-event">Missa</h2>
+							<p>Jul 21 | 7:00  7:00 - 8:00</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="event">
+				<dl>
+					<span>Jul 20, 9:30</span>
+				</dl>
+				<div>
+					<ul>
+						<li>
+							<h2 class="title-event">Confissões</h2>
+							<p>Jul 20 | 9:30  9:30 - 11:00</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="event">
+				<dl>
+					<span>Jul 17, 14:00</span>
+				</dl>
+				<div>
+					<ul>
+						<li>
+							<h2 class="title-event">Confissões</h2>
+							<p>Jul 17 | 14:00  14:00 - 16:00</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="event">
+				<dl>
+					<span>Jul 14, 18:00</span>
+				</dl>
+				<div>
+					<ul>
+						<li>
+							<h2 class="title-event">Missa</h2>
+							<p>Jul 14 | 18:00 PM  18:00 - 19:30</p>
+						</li>
+						<li>
+							<h2 class="title-event">Missa</h2>
+							<p>Jul 14 | 7:00  7:00 - 8:00</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</main>
+
+
+	<div id="footer"></div>	
+</body>
+</html>

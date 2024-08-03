@@ -1,0 +1,213 @@
+* {
+	font-family: 'Lora', serif;
+	margin: 0;
+    }
+    
+    header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	top: 0;
+	background-color: #F6F2E6;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+	padding: 0;
+    }
+    
+    #logo-church-name {
+	display: flex;
+	align-items: center;
+    }
+    
+    #logo {
+	height: 130px;
+    }
+    
+    #church-name-header {
+	margin-left: 20px;
+    }
+    
+    header nav ul {
+	display: flex;
+	list-style: none;
+	padding: 0;
+    }
+    
+    header nav ul li {
+	margin: 0 20px;
+    }
+    
+    header nav ul li a {
+	text-decoration: none;
+	color: black;
+    }
+    
+    #church-name-header span{
+	    font-weight: 700;
+	    font-size: 40px;
+	    margin-top: 50px;
+	    float: left;
+    }
+    #hero{
+	    background-image: 
+	    linear-gradient(180deg, rgba(0, 0, 0, 0.0) 0%, #282828 110.04%),
+	    url('../assets/inside-marriage.jpg');
+	    overflow: hidden;
+	    background-repeat:no-repeat;
+	    background-size: contain;
+	    height: 59.8rem;
+    }
+    main{
+	    margin-top: 100px;
+    }
+    .church-name span{
+	    margin-bottom: 50px;
+    }
+/* HOURS PAGE*/
+#main-hours-page {
+	margin-top: 200px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    }
+    
+    #begining h1 {
+	text-align: center;
+	font-size: 50px;
+    }
+    
+    #begining img {
+	width: 70em;
+	display: block;
+	margin: auto;
+    }
+    
+    #hours {
+	text-align: center;
+	width: 100%;
+    }
+    
+    .hours-mass-confissions {
+	width: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    }
+    
+    #hours-mass, #hours-confissions {
+	width: 70em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 50px;
+    }
+    
+    .hours-title {
+	text-align: center;
+	font-size: 40px;
+	width: 100%;
+    }
+    
+    .hours-content {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	text-align: left;
+    }
+    
+    .hours-content div {
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+    }
+    
+    .hours-content div h3, .hours-content div p {
+	margin: 0;
+    }
+    
+    .divider {
+	height: 50px;
+	background-color: goldenrod;
+	width: 70em;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 20px;
+    }
+    
+    #send-button {
+	border-radius: 10px;
+	background-color: goldenrod;
+	color: white;
+	padding: 10px;
+	cursor: pointer;
+	text-align: center;
+	align-self: center;
+	border: none;
+    }
+    
+    #send-button:hover {
+	background-color: rgb(159, 129, 52);
+    }
+    
+    #communion-prayer p {
+	margin: 50px;
+    }
+    
+    #communion-prayer {
+	margin: 50px;
+    }
+    
+    #communion-prayer img {
+	border-radius: 10px;
+	box-shadow: 0 20px 25px #293d4729;
+    }
+    
+    
+
+
+   
+/* FOOTER */
+footer {
+	background-color: #F6F2E6;
+	color: black;
+	width: 100%;
+	padding: 1.5rem 0;
+    }
+    
+    #footer-container {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	text-align: center;
+	padding: 0 2rem;
+	gap: 2rem;
+    }
+    
+    #footer-navigation,
+    #footer-contacts,
+    #footer-address {
+	flex: 1;
+    }
+    
+    #footer-navigation ul,
+    #footer-contacts ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+    }
+    
+    #footer-navigation ul li a,
+    #footer-contacts ul li a {
+	text-decoration: none;
+	color: black;
+    }
+    
+    #footer-address p {
+	margin: 0;
+    }
+    

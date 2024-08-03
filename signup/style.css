@@ -1,0 +1,78 @@
+* {
+	font-family: 'Lora', serif;
+	margin: 0;
+}
+    
+    #logo-church-name {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+    }
+    
+    #logo {
+	height: 130px;
+    }
+    
+    #church-name-header {
+	margin-left: 20px;
+    }
+    #church-name-header span{
+	    font-weight: 700;
+	    font-size: 40px;
+	    margin-top: 50px;
+	    float: left;
+    }
+#signup-main {
+	display: flex;
+	align-items: center;
+}
+#image-signup {
+	flex: 0 0 auto;
+}
+#form-signup {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	flex: 1;
+}
+#signup-box {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	border-radius: 8px;
+	height: auto;
+	border: 1px solid goldenrod;
+	margin-left: 30px;
+}
+#signup-box form {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+}
+#signup-box button {
+	background-color: goldenrod;
+	border-radius: 10px;
+	color: white;
+	width: 5em;
+	height: 2.5em;
+	border: none;
+	cursor: pointer;
+}
+#signup-box button:hover {
+	background-color: rgb(181, 137, 26);
+}
+#nome, #email, #senha, #confirmPassword {
+	margin: 10px;
+	border: 1px solid goldenrod;
+	border-radius: 10px;
+	height: 3em;
+	padding: 0.5em;
+	width: 40em;
+}
+#image-signup img {
+	width: 40vw;
+	height: 100vh;
+	object-fit: cover;
+}

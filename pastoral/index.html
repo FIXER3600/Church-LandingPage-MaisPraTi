@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="../header/style.css">
+	<link rel="stylesheet" href="../footer/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	<title>Pastorais</title>
+</head>
+<script>
+	function logout() {
+	localStorage.clear();
+	window.location.href = '../index.html';
+	}
+        fetch('../header/index.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            })
+            .catch(error => console.error('Erro ao carregar o HTML:', error));
+
+	    fetch('../footer/index.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            })
+            .catch(error => console.error('Erro ao carregar o HTML:', error));
+
+
+</script>
+<body>
+	<div id="header"></div>
+	<main id="main-pastoral-page">
+		<section id="begining-pastoral">
+			<h1>Pastorais</h1>
+		</section>
+		
+		<section id="third-of-men">
+			<div class="third-of-men-description">
+				<h1>Pastoral do Terço dos Homens</h1>
+				<p>Uma pastoral dedicada à devoção mariana, onde homens se reúnem regularmente para rezar o terço, fortalecer a fé e promover a espiritualidade através da intercessão de Nossa Senhora. É um espaço de fraternidade e devoção, contribuindo para a vivência cristã e o crescimento espiritual dos participantes.</p>
+			</div>
+			<div id="third-of-men-image">
+				<img src="../assets/pastoral-terco-dos-homens.jpg" alt="">
+			</div>
+			
+		</section>
+		<div class="divider"></div>
+		<section id="charity">
+			<div class="charity-description">
+				<h1>Pastoral da Caridade</h1>
+				<p> Focada no serviço aos mais necessitados da comunidade, esta pastoral promove a solidariedade, o apoio emocional e material, além de coordenar ações assistenciais. É um testemunho vivo do amor cristão, oferecendo auxílio prático e espiritual às pessoas em situações de vulnerabilidade, seguindo o exemplo de Jesus Cristo.</p>
+			</div>
+			<div id="charity-image">
+				<img src="../assets/pastoral-caridade.jpg" alt="">
+			</div>
+		</section>
+		<div class="divider"></div>
+		
+		<section id="tithe">
+			<div class="tithe-description">
+				<h1>Pastoral do Dízimo</h1>
+				<p>Responsável pela administração dos recursos financeiros da paróquia, o Dízimo é uma prática de fé e generosidade. Os membros desta pastoral auxiliam na conscientização sobre a importância da contribuição financeira regular, que sustenta as atividades pastorais, obras sociais e a manutenção da comunidade paroquial.</p>
+			</div>
+			<div id="tithe-image">
+				<img src="../assets/pastoral-dizimo.jpg" alt="">
+			</div>
+		</section>
+	</main>
+	<div id="footer"></div>	
+</body>
+</html>
